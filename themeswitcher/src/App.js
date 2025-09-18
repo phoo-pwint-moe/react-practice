@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
 
-// 1️⃣ Create Context
 const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
@@ -32,7 +31,7 @@ function ThemedComponent() {
 
   return (
     <div style={styles}>
-      <h1>Current Theme: {theme}</h1>
+      <h1>{theme} Mode </h1>
       <button onClick={toggleTheme}>
         Switch to {theme === "light" ? "Dark" : "Light"} Mode
       </button>
